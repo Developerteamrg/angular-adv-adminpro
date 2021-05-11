@@ -1,0 +1,45 @@
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper">
+    <!-- llamamos el header que estra en header -->
+    <app-header></app-header>
+    <!-- llamamos el sidebar -->
+    <app-sidebar></app-sidebar>
+
+
+    <!-- ============================================================== -->
+    <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
+        <div class="container-fluid">
+
+            <!-- llamamos al breadcrumbs -->
+            <app-breadcrumbs></app-breadcrumbs>
+
+
+            <!-- Mi sistema de rutas -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+<!--                             This is some text within a card block.
+ -->
+                            <!-- SIRVE PARA REDIRIGIR A LAS PAGINAS Y SI ESCRIBE CUALQUIER COSA VA A NOTPAGEFOUND -->
+                           <router-outlet></router-outlet>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer">
+                © 2017 Admin Pro by wrappixel.com
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+
+        </div>
+    </div>
+</div>
